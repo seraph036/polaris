@@ -1,0 +1,25 @@
+# Custom widget for showing Kernel Version and Number of Upgradeable Packages
+
+# Install the "Command Output" widget from the KDE Store, then add the following command to the widget in the panel, depending on your distro:
+
+### --- Arch Linux --- ###
+
+# Kernel Widget
+kernel="$(uname -r)";White='\033[0;97m';NC='\033[0m';printf " ${White}%s ${NC}" $kernel
+
+# Upgradeable List Widget
+upd=$(checkupdates | wc -l); White='\033[0;97m'; NC='\033[0m'; printf " ${White}$upd${NC} "
+
+#------------------------#
+
+### --- Debian --- ###
+
+# Kernel Widget
+kernel="$(uname -r)";White='\033[0;97m';NC='\033[0m';printf " ${White}%s ${NC}" $kernel
+
+# Upgradeable List Widget
+upd=$(apt list --upgradeable 2>/dev/null | cut -d/ -f1 | grep -v Listing | wc -l); White='\033[0;97m'; NC='\033[0m'; printf " ${White}$upd${NC} "
+
+#------------------------#
+
+# After setting up the commands, open the "Appearance" section of the applet config and set the Text Colour as #dc2332
