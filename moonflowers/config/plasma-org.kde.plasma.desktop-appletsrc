@@ -242,7 +242,7 @@ DialogWidth=720
 
 [Containments][2][Applets][3][Configuration][General]
 favoritesPortedToKAstats=true
-icon=/home/alexandre/polaris/moonflowers/local/share/theme-icons/moonarch.png
+icon=/home/alexandre/.local/share/theme-icons/moonarch.png
 switchCategoryOnHover=true
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 

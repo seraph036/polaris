@@ -241,7 +241,7 @@ DialogWidth=720
 
 [Containments][2][Applets][3][Configuration][General]
 favoritesPortedToKAstats=true
-icon=/home/alexandre/polaris/lachesis/local/share/theme-icons/lethearch.png
+icon=/home/alexandre/.local/share/theme-icons/upasarch.png
 switchCategoryOnHover=true
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
