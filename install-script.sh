@@ -1,5 +1,13 @@
 #!/bin/bash
 
+backup_config() {
+tar -czvf ~/polaris-backup-config.tar.gz ~/.config/{autostart,dconf,fastfetch,fish,flameshot,fontconfig,KDE,kdedefaults,menus,xsettingsd,baloofilerc,elisarc,kdeglobals,kglobalshortcutsrc,kiorc,konsolerc,krunnerrc,ktimezonedrc,kwinrc,kwinrulesrc,kxkbrc,plasma-localerc,plasma-org.kde.plasma.desktop-appletsrc,plasmashellrc,starship.toml,Trolltech.conf}
+}
+
+backup_local() {
+tar -czvf ~/polaris-backup-local.tar.gz ~/.local/share/{applications,color-schemes,desktop-directories,dolphin,konsole,plasmoids,theme-icons,wallpapers}
+}
+
 choose_theme() {
 read -p "Which theme would you like to install? (oddfish/moonflowers/lachesis/upas) " choiceTheme
 case "$choiceTheme" in
@@ -52,15 +60,15 @@ echo "All done. Now, head over to the Plasma settings and apply the theme colour
 read -p "Do you want to back up your .config and .local/share files? (might take a minute, recommended) (y/n)? " choice
 case "$choice" in
   y|Y|yes ) if [ -d ~/.config ] && [ -d ~/.local/share ]; then
-        tar -czvf ~/polaris-backup.tar.gz ~/.config ~/.local/share
+        backup_config && backup_local
     elif
         [ -d ~/.config ] && [ ! -d ~/.local/share ]; then
         echo "no ~/.local/share found, proceeding with ~/.config backup"
-        tar -czvf ~/polaris-backup.tar.gz ~/.config
+        backup_config
     elif
         [ -d ~/.local/share ] && [ ! -d ~/.config ]; then
         echo "no ~/.config found, proceeding with ~/.local/share backup"
-        tar -czvf ~/polaris-backup.tar.gz ~/.local/share
+        backup_local
     elif
         [ ! -d ~/.local/share ] && [ ! -d ~/.config ]; then
         echo "No .config or .local/share found"

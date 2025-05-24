@@ -37,7 +37,7 @@
         {
             "type": "title",
             "color": {
-                "user": "dce0e3",
+                "user": "#dce0e3",
                 "at": "#aaaaac",
                 "host": "#499bff"
             }
