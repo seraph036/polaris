@@ -1,0 +1,36 @@
+[Desktop Entry]
+Actions=NewWindow;NewPrivateWindow;ProfileManagerWindow;
+Categories=Network;WebBrowser;
+Comment=Browse the World Wide Web
+Exec=waterfox-g %u
+GenericName=Web Browser
+Icon=/home/alexandre/polaris/oddfish/local/share/theme-icons/oddfox.png
+Keywords=Internet;WWW;Browser;Web;Explorer;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;x-scheme-handler/chrome;video/webm;application/x-xpinstall;
+Name=Waterfox
+NoDisplay=false
+Path=
+StartupNotify=true
+StartupWMClass=waterfox
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+X-MuiltpleArgs=false
+
+[Desktop Action NewPrivateWindow]
+Exec=waterfox-g --private-window
+Name[en_GB]=New Private Window
+Name=Open a New Private Window
+
+[Desktop Action NewWindow]
+Exec=waterfox-g --new-window
+Name[en_GB]=New Window
+Name=Open a New Window
+
+[Desktop Action ProfileManagerWindow]
+Exec=waterfox-g --ProfileManager
+Name[en_GB]=Profile Manager
+Name=Open the Profile Manager

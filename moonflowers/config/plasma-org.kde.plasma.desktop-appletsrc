@@ -54,7 +54,7 @@ chartFace=org.kde.ksysguard.linechart
 showTitle=false
 
 [Containments][1][Applets][38][Configuration][SensorColors]
-cpu/cpu\requency=38,66,249
+cpu/cpu\requency=220,35,50
 
 [Containments][1][Applets][38][Configuration][SensorLabels]
 cpu/all/averageFrequency=CPU Freq
@@ -92,9 +92,9 @@ DialogWidth=720
 
 [Containments][1][Applets][41][Configuration][SensorColors]
 disk/.*/usedPercent=249,175,38
-disk/38add93a-6ccb-442e-8196-f0991a38e042/usedPercent=216,8,98
+disk/38add93a-6ccb-442e-8196-f0991a38e042/usedPercent=220,35,50
 disk/6a18f532-d410-4dc3-8dd1-1d4ecec4b6f4/usedPercent=220,35,50
-disk/772a3f55-222e-48e2-8cae-7eb5ea1b8d3f/usedPercent=255,153,170
+disk/772a3f55-222e-48e2-8cae-7eb5ea1b8d3f/usedPercent=220,35,50
 disk/all/usedPercent=38,112,249
 
 [Containments][1][Applets][41][Configuration][SensorLabels]
@@ -178,15 +178,11 @@ locked=true
 positions={"1920x1080":[]}
 
 [Containments][1][Wallpaper][org.kde.image][General]
-Image=/home/alexandre/Documents/moonnight.png
-PreviewImage=/home/alexandre/.local/share/wallpapers/oddwave2.png
-SlidePaths=/home/alexandre/.local/share/wallpapers/,/usr/share/wallpapers/
+SlidePaths=/home/alexandre/.local/share/wallpapers/
 
 [Containments][1][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/alexandre/moonflowers/local/share/wallpapers/moonnight.png
 SlideInterval=240
-SlidePaths=/home/alexandre/moonflowers/local/share/wallpapers/
-UncheckedSlides=/home/alexandre/.local/share/wallpapers/oddfriend.png,/home/alexandre/.local/share/wallpapers/oddplanet.png,/home/alexandre/.local/share/wallpapers/oddfish.png
+SlidePaths=/home/alexandre/.local/share/wallpapers
 
 [Containments][2]
 activityId=
@@ -246,7 +242,7 @@ DialogWidth=720
 
 [Containments][2][Applets][3][Configuration][General]
 favoritesPortedToKAstats=true
-icon=/home/alexandre/moonflowers/local/share/theme-icons/moonarch.png
+icon=/home/alexandre/polaris/moonflowers/local/share/theme-icons/moonarch.png
 switchCategoryOnHover=true
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
@@ -279,7 +275,7 @@ immutability=1
 plugin=org.kde.plasma.icontasks
 
 [Containments][2][Applets][5][Configuration][General]
-launchers=applications:systemsettings.desktop,preferred://filemanager,applications:waterfox.desktop,applications:org.kde.konsole.desktop,applications:net.lutris.Lutris.desktop
+launchers=applications:systemsettings.desktop,preferred://filemanager,applications:waterfox.desktop,applications:org.kde.konsole.desktop
 
 [Containments][2][Applets][6]
 immutability=1
